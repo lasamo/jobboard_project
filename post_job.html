@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Job Posting Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Job Board</h1>
+      <nav>
+        <button type="button" onclick="location.href='index.html'">[&nbsp;Home&nbsp;]</button>
+        <button type="button" onclick="location.href='jobs.php'">[&nbsp;Jobs&nbsp;]</button>
+        <button>[&nbsp;Companies&nbsp;]</button>
+        <button type="button" onclick="location.href='post_job.html'">[&nbsp;Post a Job&nbsp;]</button>
+      </nav>
+    </header>
+    <fieldset>
+      <legend>Post Job</legend>
+      <form method='POST' action='post_job.php'>
+        <p>
+        <input type='text' id = 'job_title' name='job_title' placeholder='Job title...'>
+        </p>
+        <p>
+        <input type='text' id = 'company_name' name='company_name' placeholder='Company name...'>
+        </p>
+        <p>
+        <input type='text' id = 'job_location' name='job_location' placeholder='Job location...'>
+        </p>
+        <p>
+        <input type='text' id = 'company_city' name='company_city' placeholder='City...'>
+        </p>
+        <p>
+        <input type='text' id = 'job_description' name='job_description' placeholder='Job description...' rows ='4'>
+        </p>
+        <p>
+        <input type='email' id = 'company_email' name='company_email' placeholder='Email...'>
+        </p>
+        <p>
+        <input type='text' id = 'company_phone' name='company_phone' placeholder='Phone number...'>
+        </p>
+        <p>
+        <input type='float' id = 'job_salary' name='job_salary' placeholder='Salary..'>
+        </p>
+        <input type='submit' name='submit' value='Post!'>
+      </form>
+    </fieldset>
+  </body>
+</html>

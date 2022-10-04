@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Applicant Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Apply now!</legend>
+      <form method='POST' action='apply_to.php'>
+        <p>
+          <input type = 'text' id = 'applicant_fname' name = 'applicant_fname' placeholder = 'Your first name...'>
+        </p>
+        <p>
+          <input type = 'text' id = 'applicant_lname' name = 'applicant_lname' placeholder = 'Your last name...'>
+        </p>
+        <p>
+          <input type = 'email' id = 'applicant_email' name = 'applicant_email' placeholder = 'Your email...'>
+        </p>
+        <p>
+          <input type = 'text' id = 'applicant_city' name = 'applicant_city' placeholder = 'City...'>
+        </p>
+        <p>
+          <input type = 'text' id = 'applicant_phone' name = 'applicant_phone' placeholder = 'Phone number...'>
+        </p>
+        <input type='submit' name='submit' value='Post!'>
+      </form>
+    </fieldset>
+  </body>
+</html>
